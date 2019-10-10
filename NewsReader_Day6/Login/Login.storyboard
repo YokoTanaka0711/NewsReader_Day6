@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WG6-iV-kM9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="HjY-Lt-aWb">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="WG6-iV-kM9" customClass="LoginViewController" customModule="NewsReader_Day6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IZi-Le-TeR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="pHL-mz-umm">
+                                <rect key="frame" x="62.5" y="140" width="250" height="83"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHe-L3-4zH">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
+                                        <color key="backgroundColor" red="0.96377104920000001" green="0.96377104920000001" blue="0.96377104920000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="fgM-yB-fHN"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="quI-Az-bKK">
+                                        <rect key="frame" x="0.0" y="53" width="250" height="30"/>
+                                        <color key="backgroundColor" red="0.96377104920000001" green="0.96377104920000001" blue="0.96377104920000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="80Z-k1-TGB"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="uhc-Zu-RqS">
+                                <rect key="frame" x="73.5" y="295" width="228" height="77"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYm-vW-myd">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="77"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="77" id="73W-Ub-307"/>
+                                            <constraint firstAttribute="width" constant="77" id="an3-3s-ynk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" red="0.96377104920000001" green="0.96377104920000001" blue="0.96377104920000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="新規登録"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signUpTappedBtn:" destination="WG6-iV-kM9" eventType="touchUpInside" id="rou-It-a8s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqY-Ki-RKg">
+                                        <rect key="frame" x="151" y="0.0" width="77" height="77"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="77" id="KFO-uu-sU0"/>
+                                            <constraint firstAttribute="height" constant="77" id="gBW-Xq-c8Z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" red="0.96377104920000001" green="0.96377104920000001" blue="0.96377104920000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="ログイン"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signInTappedBtn:" destination="WG6-iV-kM9" eventType="touchUpInside" id="oF3-bx-0sS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uhc-Zu-RqS" firstAttribute="centerX" secondItem="IZi-Le-TeR" secondAttribute="centerX" id="BKf-Jo-BDi"/>
+                            <constraint firstItem="pHL-mz-umm" firstAttribute="top" secondItem="a0b-8R-uYu" secondAttribute="top" constant="120" id="Gu4-bb-paP"/>
+                            <constraint firstItem="pHL-mz-umm" firstAttribute="centerX" secondItem="IZi-Le-TeR" secondAttribute="centerX" id="Zg2-PS-5Yg"/>
+                            <constraint firstItem="pHL-mz-umm" firstAttribute="width" secondItem="a0b-8R-uYu" secondAttribute="width" multiplier="2/3" id="gey-7I-rmg"/>
+                            <constraint firstItem="uhc-Zu-RqS" firstAttribute="centerY" secondItem="IZi-Le-TeR" secondAttribute="centerY" id="o9m-Hy-z2E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a0b-8R-uYu"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="QHe-L3-4zH" id="8Cn-Wb-Fy7"/>
+                        <outlet property="passTextField" destination="quI-Az-bKK" id="weZ-JC-eNb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6PW-fR-ov0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="-34.632683658170919"/>
+        </scene>
+    </scenes>
+</document>
